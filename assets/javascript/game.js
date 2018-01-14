@@ -30,13 +30,15 @@ var topics = ["Motorcycle", "Surfing", "Beer", "Kobe"];
                     // var p = $("<p>").text("Rating: " + data[i].rating);
                     var rating = data[i].rating;
                     var topicImage = $("<img>");
-                    topicImage.attr("src", data[i].images.fixed_height.url);
-                    topicImage.attr("data-state", data[i].images.fixed_height.url)
-                    topicImage.attr("data-still", data[i].images.fixed_height_still.url)
+                    topicImage.attr("src", data[i].images.fixed_height_small_still.url);
+                    topicImage.attr("data-still", data[i].images.fixed_height_small_still.url);
+                    topicImage.attr("data-animate", data[i].images.fixed_height_small.url);
+                    topicImage.attr("data-state", "still");
+                    topicImage.addClass("image");
                     topicDiv.append(rating);
                     topicDiv.append(topicImage);
                     $("#container").prepend(topicImage);
-                    $("#container").prepend("<br> Rating: " + rating);
+                    $("#container").prepend("Rating: " + rating);
                 }
             })
         })
@@ -47,5 +49,15 @@ var topics = ["Motorcycle", "Surfing", "Beer", "Kobe"];
         var userClick = $("#search").val().trim();
         topics.push(userClick);
         createButtons();
+    })
+    $(document).on("click", ".image", function(){
+        var state = $(this).attr("data-state");
+        if (state == "still") {
+            $(this).attr("src", $(this).data("animate"));
+            $(this).attr("data-state", "animate");
+        } else {
+            $(this).attr("src", $(this).data("still"));
+            $(this).attr("data-state", "still");
+        }
     })
 });

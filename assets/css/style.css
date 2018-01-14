@@ -1,0 +1,41 @@
+body {
+    background-image: urL("https://wegraphics.net/wp-content/uploads/2011/01/2011_wall_2b.jpg");
+    background-repeat: no-repeat;
+    background-size: 1800px 1000px;
+    color: black;
+}
+button {
+    background-color: gray;
+    font-size: 26px;
+    margin-top: 5%;
+}
+#submit {
+    background-color: gray;
+}
+#search {
+    height: 52px;
+    margin-top: 2%;
+}
+#container {
+    position: absolute;
+    margin-top: 1%;
+    color: black;
+    background-color: white;
+}
+form {
+    margin-top: 5%;
+    color: black;
+    background-color: white;
+    padding-bottom: 2%;
+}
+#header {
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 28.5%;
+}
