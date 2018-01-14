@@ -21,12 +21,19 @@ button {
     margin-top: 1%;
     color: black;
     background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 15%;
 }
 form {
+    position: absolute;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-top: 5%;
     color: black;
     background-color: white;
     padding-bottom: 2%;
+    margin-left: 28%;
 }
 #header {
     position: absolute;
