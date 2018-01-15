@@ -18,31 +18,28 @@ button {
 }
 #container {
     position: absolute;
-    margin-top: 1%;
+    right: 26%;
     color: black;
     background-color: white;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 800px;
     margin-top: 15%;
 }
 form {
+    width: 800px;
     position: absolute;
-    padding-left: 10%;
-    padding-right: 10%;
     margin-top: 5%;
     color: black;
     background-color: white;
     padding-bottom: 2%;
-    margin-left: 28%;
+    right: 26%;
 }
 #header {
     position: absolute;
+    width: 800px;
     color: black;
     background-color: white;
-    padding-left: 10%;
-    padding-right: 10%;
     font-size: 40px;
     border-style: solid;
     border-width: 2px;
-    margin-left: 28.5%;
+    right: 26%;
 }

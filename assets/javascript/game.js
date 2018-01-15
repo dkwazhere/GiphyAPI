@@ -1,7 +1,7 @@
 $(document).ready(function(){
 // Declaring global variables
 var topics = ["Motorcycle", "Surfing", "Beer", "Kobe"];
-
+// creating functions
     function createButtons(){
         $("#buttons").empty();
         for (i=0; i<topics.length; i++){
@@ -43,6 +43,7 @@ var topics = ["Motorcycle", "Surfing", "Beer", "Kobe"];
             })
         })
     }
+// button click
     $("#submit").on("click", function(){
         event.preventDefault();
         $("#container").empty();
@@ -50,6 +51,7 @@ var topics = ["Motorcycle", "Surfing", "Beer", "Kobe"];
         topics.push(userClick);
         createButtons();
     })
+// pausing gifs on click
     $(document).on("click", ".image", function(){
         var state = $(this).attr("data-state");
         if (state == "still") {
